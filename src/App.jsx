@@ -4,7 +4,7 @@ import { Home } from "./components/pages/Home/Home.jsx";
 import { Bookings } from "./components/pages/Bookings/Bookings.jsx";
 import { NotFound } from "./components/pages/NotFound/NotFound.jsx";
 import { Pending } from "./components/pages/Pending/Pending.jsx";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (

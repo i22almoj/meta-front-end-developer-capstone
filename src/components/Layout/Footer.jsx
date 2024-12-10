@@ -19,7 +19,7 @@ import logoWhiteImage from "./assets/logo-white.png";
 export const Footer = () => {
 
   const contacts = [
-    { icon: faLocationDot, info: "78 W Greenshaw St, Chicago, IL 60607" },
+    { icon: faLocationDot, info: "78 Green St, Chicago, IL 60607" },
     { icon: faPhone, info: "(312) 555-3626" },
     { icon: faEnvelope, info: "customer@littlelemon.com" },
   ];
