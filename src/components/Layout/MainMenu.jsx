@@ -11,7 +11,7 @@ export const MainMenu = () => {
   return (
     <>
       <button
-        className="nav-bar-hamburger"
+        className="header-nav-bar-hamburger"
         type="button"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
@@ -23,7 +23,7 @@ export const MainMenu = () => {
       </button>
 
       <ul
-        className={isMenuOpen ? "nav-bar-links open" : "nav-bar-links"}
+        className={isMenuOpen ? "header-nav-bar-links open" : "header-nav-bar-links"}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         {menuItems.map((item) => (
