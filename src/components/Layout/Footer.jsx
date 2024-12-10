@@ -1,6 +1,6 @@
 import {
   faFacebook,
-  faTwitter,
+  faXTwitter,
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
@@ -23,7 +23,7 @@ const contacts = [
 
 const socials = [
   { icon: faFacebook, name: "facebook" },
-  { icon: faTwitter, name: "twitter" },
+  { icon: faXTwitter, name: "twitter" },
   { icon: faInstagram, name: "instagram" },
   { icon: faYoutube, name: "youtube" },
 ];
