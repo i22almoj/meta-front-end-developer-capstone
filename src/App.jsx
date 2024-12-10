@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout/Layout.jsx";
 import { Home } from "./components/pages/Home/Home.jsx";
-import { Bookings } from "./components/pages/Bookings/Bookings.jsx";
+import { Reservations } from "./components/pages/Reservations/Reservations.jsx";
 import { NotFound } from "./components/pages/NotFound/NotFound.jsx";
 import { Pending } from "./components/pages/Pending/Pending.jsx";
 import "./App.scss";
@@ -14,8 +14,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<Pending />} />
           <Route path="/menu" element={<Pending />} />
-          <Route path="/bookings" element={<Bookings />} />
-          <Route path="/bookings/confirmed" element={<Pending />} />
+          <Route path="/reservations" element={<Reservations />} />
+          <Route path="/reservations/confirmed" element={<Pending />} />
           <Route path="/order-online" element={<Pending />} />
           <Route path="/login" element={<Pending />} />
           <Route path="*" element={<NotFound />} />
