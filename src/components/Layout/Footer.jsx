@@ -16,16 +16,16 @@ import "./Footer.css";
 import logoWhiteImage from "./assets/logo-white.png";
 
 const contacts = [
-  { icon: faLocationDot, info: "678 Pisa Ave, Chicago, IL 60611" },
-  { icon: faPhone, info: "(312) 593-2744" },
+  { icon: faLocationDot, info: "78 W Greenshaw St, Chicago, IL 60607" },
+  { icon: faPhone, info: "(312) 555-3626" },
   { icon: faEnvelope, info: "customer@littlelemon.com" },
 ];
 
 const socials = [
-  { icon: faFacebook, name: "facebook" },
-  { icon: faXTwitter, name: "twitter" },
-  { icon: faInstagram, name: "instagram" },
-  { icon: faYoutube, name: "youtube" },
+  { icon: faFacebook, name: "Facebook", url: 'https://facebook.com' },
+  { icon: faXTwitter, name: "X", url:'https://x.com' },
+  { icon: faInstagram, name: "Instagram", url:'https://instagram.com' },
+  { icon: faYoutube, name: "Youtube", url: 'https://youtube.com' },
 ];
 
 export const Footer = () => {
@@ -62,7 +62,8 @@ export const Footer = () => {
           {socials.map((social, index) => (
             <a
               key={index}
-              href={`https://www.${social.name}.com`}
+              href={social.url}
+              title={social.name}
               target="_blank"
               rel="noreferrer"
             >
