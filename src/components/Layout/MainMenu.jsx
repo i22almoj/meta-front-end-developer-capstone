@@ -31,7 +31,11 @@ export const MainMenu = () => {
         {menuItems.map((item) => (
           <li
             key={item.name}
-            className={pathname === item.path ? "current-location" : ""}
+            className={
+              pathname === item.path || pathname.includes(item.path + "/")
+                ? "current-location"
+                : ""
+            }
           >
             <Link to={item.path}>{item.name}</Link>
           </li>
