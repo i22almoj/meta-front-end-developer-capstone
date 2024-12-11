@@ -2,10 +2,10 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { Reservations } from "./Reservations.jsx";
 
-describe("Booking page", () => {
+describe("Página de Reservas", () => {
   const timeFormat = /^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/;
 
-  test("should have one or more available booking time options", async () => {
+  test("Debería tener una o más opciones de horarios de reserva disponibles.", async () => {
     render(
       <MemoryRouter>
         <Reservations />
@@ -20,7 +20,7 @@ describe("Booking page", () => {
     );
   });
 
-  test("should update available booking time options when changing booking date", async () => {
+  test("Debería actualizar las opciones de horarios de reserva disponibles al cambiar la fecha de reserva.", async () => {
     render(
       <MemoryRouter>
         <Reservations />
@@ -47,6 +47,4 @@ describe("Booking page", () => {
     );
     expect(initialTimeOptions.length).not.toBe(updatedTimeOptions.length);
   });
-
-  //test('', () => {});
 });

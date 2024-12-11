@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import { BookingForm } from "./BookingForm.jsx";
 
-describe("Booking form", () => {
+describe("Formulario de Reserva", () => {
   const availableTimes = ["17:00", "17:30"];
   const today = new Date().toISOString().split("T")[0];
   const dispatchOnDateChange = jest.fn();
