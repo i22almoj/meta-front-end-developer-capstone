@@ -1,6 +1,6 @@
 import { useReducer } from "react";
 import { useNavigate } from "react-router-dom";
-import { ReservationForm } from "./ReservationForm.jsx";
+import { BookingForm } from "./BookingForm.jsx";
 import { fetchAPI, submitAPI } from "../../../services/api.js";
 import "./Reservations.scss";
 
@@ -31,7 +31,7 @@ export const Reservations = () => {
   return (
     <div className="bookings">
       <h2>Table reservation</h2>
-      <ReservationForm
+      <BookingForm
         availableTimes={availableTimes}
         dispatchOnDateChange={dispatchOnDateChange}
         submitData={submitData}

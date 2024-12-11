@@ -23,13 +23,15 @@ export const MainMenu = () => {
       </button>
 
       <ul
-        className={isMenuOpen ? "header-nav-bar-links open" : "header-nav-bar-links"}
+        className={
+          isMenuOpen ? "header-nav-bar-links open" : "header-nav-bar-links"
+        }
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         {menuItems.map((item) => (
           <li
             key={item.name}
-            className={pathname == item.path ? "current-location" : ""}
+            className={pathname === item.path ? "current-location" : ""}
           >
             <Link to={item.path}>{item.name}</Link>
           </li>
