@@ -1,4 +1,4 @@
-.header{
+.header {
   &-nav-bar {
     grid-template-columns: auto auto auto;
     min-height: 6.25rem;
@@ -8,7 +8,7 @@
       justify-self: start;
       align-self: center;
       line-height: 0;
-    
+
       img {
         max-width: 15.625rem;
       }
@@ -36,15 +36,13 @@
       list-style-type: none;
       transition: left 0.3s;
 
-      &.open {
-        left: 0;
-      }
-
       li {
         display: flex;
 
-        &.current-location, &:hover, &:focus{
-          a{
+        &.current-location,
+        &:hover,
+        &:focus {
+          a {
             background-color: #f4ce14;
           }
         }
@@ -63,9 +61,6 @@
     }
   }
 }
-
-
-
 
 @media only screen and (max-width: 992px) {
   .header .header-nav-bar {
@@ -89,6 +84,10 @@
       background-color: #ffffff;
       box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.2);
       z-index: 100;
+
+      &.open {
+        left: 0;
+      }
 
       li {
         flex-direction: column;
